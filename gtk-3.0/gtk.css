@@ -1,0 +1,14 @@
+/* Neon Night accents for adw-gtk3 (libadwaita named colors) */
+@define-color accent_color       #22d3ee;
+@define-color accent_bg_color    #22d3ee;
+@define-color accent_fg_color    #0b0f1a;
+@define-color window_bg_color    #141b2d;
+@define-color window_fg_color    #e6edf7;
+@define-color view_bg_color      #0b0f1a;
+@define-color view_fg_color      #e6edf7;
+@define-color headerbar_bg_color #0b0f1a;
+@define-color headerbar_fg_color #e6edf7;
+@define-color sidebar_bg_color   #0b0f1a;
+@define-color card_bg_color      #1f2a44;
+@define-color popover_bg_color   #1f2a44;
+@define-color dialog_bg_color    #141b2d;

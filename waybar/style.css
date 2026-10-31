@@ -1,0 +1,59 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    min-height: 0;
+}
+
+window#waybar {
+    background: alpha(@bg, 0.55);
+    border: 2px solid alpha(@cyan, 0.35);
+    border-radius: 14px;
+    color: @text;
+}
+
+.modules-left, .modules-center, .modules-right {
+    padding: 0 6px;
+}
+
+#custom-menu {
+    color: @cyan;
+    font-size: 20px;
+    padding: 0 12px 0 8px;
+}
+
+#workspaces button {
+    color: @muted;
+    padding: 0 9px;
+    margin: 5px 2px;
+    border-radius: 9px;
+}
+#workspaces button.active {
+    color: @bg;
+    background: linear-gradient(90deg, @cyan, @violet);
+}
+#workspaces button:hover {
+    background: alpha(@cyan, 0.15);
+    color: @text;
+}
+
+#window {
+    color: @muted;
+    padding-left: 10px;
+}
+
+#clock {
+    color: @cyan;
+    background: alpha(@surface, 0.8);
+    border-radius: 10px;
+    padding: 0 14px;
+    margin: 5px 0;
+}
+
+#cpu     { color: @green;  padding: 0 10px; }
+#memory  { color: @violet; padding: 0 10px; }
+#network { color: @pink;   padding: 0 10px; }
+#tray    { padding: 0 10px; }

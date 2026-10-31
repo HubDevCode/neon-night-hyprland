@@ -1,0 +1,56 @@
+@import "../colors.rasi"
+
+* {
+    background-color: transparent;
+    text-color:       @text;
+}
+
+window {
+    width:            640px;
+    background-color: @bg;
+    border:           2px;
+    border-color:     @cyan;
+    border-radius:    16px;
+    padding:          18px;
+}
+
+mainbox {
+    spacing: 14px;
+}
+
+inputbar {
+    background-color: @surface;
+    border-radius:    10px;
+    padding:          12px 14px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+prompt {
+    text-color: @cyan;
+}
+entry {
+    placeholder:       "Search...";
+    placeholder-color: @muted;
+}
+
+listview {
+    lines:   7;
+    spacing: 4px;
+}
+
+element {
+    padding:       9px 12px;
+    border-radius: 10px;
+    spacing:       12px;
+}
+element-icon {
+    size: 28px;
+}
+element-text {
+    vertical-align: 0.5;
+    text-color:     inherit;
+}
+element selected.normal {
+    background-color: @overlay;
+    text-color:       @cyan;
+}

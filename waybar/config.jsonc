@@ -1,0 +1,50 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "margin-top": 8,
+    "margin-left": 14,
+    "margin-right": 14,
+    "spacing": 6,
+    "reload_style_on_change": true,
+
+    "modules-left":   ["custom/menu", "hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right":  ["cpu", "memory", "network", "tray"],
+
+    "custom/menu": {
+        "format": "󰀻",
+        "tooltip": false,
+        "on-click": "rofi -show drun"
+    },
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "persistent-workspaces": { "*": 5 }
+    },
+    "hyprland/window": {
+        "max-length": 40,
+        "separate-outputs": true
+    },
+    "clock": {
+        "format": "  {:%H:%M}",
+        "format-alt": "  {:%A %d %B}",
+        "tooltip-format": "<tt>{calendar}</tt>"
+    },
+    "cpu": {
+        "format": "  {usage}%",
+        "interval": 2
+    },
+    "memory": {
+        "format": "  {percentage}%",
+        "interval": 2
+    },
+    "network": {
+        "format-ethernet": "󰈀  wired",
+        "format-wifi": "  {essid}",
+        "format-disconnected": "󰤭  offline",
+        "tooltip-format": "{ifname} {ipaddr}"
+    },
+    "tray": {
+        "spacing": 8
+    }
+}
